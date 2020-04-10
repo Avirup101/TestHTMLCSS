@@ -1,0 +1,78 @@
+body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 160px 180px 200px 100px;
+    grid-template-areas: "head head"
+    "sidebar main"
+    "div div"
+    "footer footer";
+
+}
+
+
+header, aside, main, footer{
+    text-align: center;
+    /* font-size: 30px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+#heading{
+    text-align: center;
+    margin-top: 45px;
+}
+
+header{
+    background: peru;
+    color: white;
+    grid-area: head;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+aside{
+    background: purple;
+    color: white;
+    grid-area: sidebar;
+    margin-right: 5px;
+}
+
+#hobbies{
+    grid-area: main;
+    background: lightgreen;
+   
+}
+
+
+main{
+    grid-area: div;
+    background: teal;
+    margin-top: 5px;
+}
+
+footer{
+    background: black;
+    color: white;
+    grid-area: footer;
+    margin-top: 5px;
+}
+
+.nav-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-list-item{
+    margin: 5px 30px;
+}
+.nav-list-item a{
+    text-decoration: none;
+    color: white;
+}
